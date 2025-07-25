@@ -16,8 +16,9 @@ export default makeScene2D(function* (view) {
     />
   );
 
-  // Wait for estimated duration (adjust as needed)
-  yield* waitFor(10); // Adjust duration based on actual video length
+  // Wait for the video duration (check video properties to get exact duration)
+  // You can see the duration in the timeline or video properties
+  yield* waitFor(15); // Adjust this to match Brian.mp4 actual duration
 
   // Remove first video and add second video
   video1().remove();
@@ -29,8 +30,8 @@ export default makeScene2D(function* (view) {
     />
   );
 
-  // Wait for estimated duration (adjust as needed)
-  yield* waitFor(10); // Adjust duration based on actual video length
+  // Wait for the video duration
+  yield* waitFor(15); // Adjust this to match Vaibhav.mp4 actual duration
 
   // Remove second video and add third video
   video2().remove();
@@ -42,6 +43,6 @@ export default makeScene2D(function* (view) {
     />
   );
 
-  // Wait for estimated duration (adjust as needed)
-  yield* waitFor(10); // Adjust duration based on actual video length
+  // Wait for the video duration
+  yield* waitFor(15); // Adjust this to match bles video actual duration
 });

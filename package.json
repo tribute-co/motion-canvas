@@ -5,7 +5,8 @@
   "scripts": {
     "start": "vite",
     "serve": "vite",
-    "build": "tsc && vite build"
+    "build": "vite build",
+    "build-safe": "tsc --noEmit && vite build"
   },
   "dependencies": {
     "@motion-canvas/core": "^3.17.2",

@@ -9,5 +9,16 @@ export default defineConfig({
   ],
   server: {
     port: 3000,
+    host: true,
   },
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: 'index.html'
+      }
+    }
+  },
+  base: './',
 });
